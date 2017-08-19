@@ -144,7 +144,7 @@ class FillEvent(Event):
         Based on "US API Directed Orders":
         https://www.interactivebrokers.com/en/index.php?f=commission&p=stocks2
         """
-        full_cost = 1.3
+        # full_cost = 1.3
         if self.quantity <= 500:
             full_cost = max(1.3, 0.013 * self.quantity)
         else:  # Greater than 500
